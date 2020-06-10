@@ -16,7 +16,7 @@ class PaymentCanceled extends React.Component {
         return (
             <Fragment>
                 <div className="container-fluid card-height">
-                    <h4>PaymentCanceled</h4>
+                    <h4>Payment Canceled</h4>
                     <button onClick={this.redirectToHome}>Home</button>
                 </div>
             </Fragment>

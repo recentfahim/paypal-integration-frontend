@@ -8,7 +8,7 @@ import {
 import PaymentCanceled from "./components/payment_cancel";
 import Home from "./components/Home";
 import PaymentSuccess from "./components/payment_successful";
-
+import CapturePayments from "./components/capture_payments";
 
 function App() {
     return (
@@ -17,10 +17,13 @@ function App() {
                 <div>
                     <Switch>
                         <Route path="/payment-successful">
-                            <PaymentSuccess location={window.location}/>
+                            <PaymentSuccess/>
                         </Route>
                         <Route path="/payment-cancel">
                             <PaymentCanceled/>
+                        </Route>
+                        <Route path="/payment-process">
+                            <CapturePayments  location={window.location}/>
                         </Route>
                         <Route path="/">
                             <Home/>

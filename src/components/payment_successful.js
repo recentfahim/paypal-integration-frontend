@@ -1,5 +1,4 @@
 import React, {Fragment} from 'react';
-const queryString = require('query-string');
 
 class PaymentSuccess extends React.Component {
     constructor(props) {
@@ -8,13 +7,8 @@ class PaymentSuccess extends React.Component {
         console.log(this.props);
         this.state = {
             message: null,
-            par: null
         }
     }
-     submit = () =>{
-        console.log(this.props.location);
-    }
-
     componentDidMount() {
     this.submit();
 

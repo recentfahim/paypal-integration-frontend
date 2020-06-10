@@ -17,7 +17,7 @@ function App() {
                 <div>
                     <Switch>
                         <Route path="/payment-successful">
-                            <PaymentSuccess/>
+                            <PaymentSuccess location={window.location}/>
                         </Route>
                         <Route path="/payment-cancel">
                             <PaymentCanceled/>

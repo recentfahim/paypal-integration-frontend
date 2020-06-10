@@ -1,4 +1,6 @@
 import React, {Fragment} from 'react';
+import {Redirect} from 'react-router-dom';
+
 
 class PaymentSuccess extends React.Component {
     constructor(props) {
@@ -6,12 +8,11 @@ class PaymentSuccess extends React.Component {
         super(props);
         console.log(this.props);
         this.state = {
-            message: null,
         }
     }
-    componentDidMount() {
-    this.submit();
 
+    redirectToHome(){
+       return <Redirect to="/" />
     }
 
 
@@ -20,6 +21,7 @@ class PaymentSuccess extends React.Component {
             <Fragment>
                 <div className="container-fluid card-height">
                     <h4>Payment successful</h4>
+                    <button onClick={this.redirectToHome}>Home</button>
                 </div>
             </Fragment>
         );

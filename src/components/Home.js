@@ -28,6 +28,7 @@ class Home extends React.Component {
             <Fragment>
                 <div className="container-fluid">
                     <h1>This is Home, you can make payment by clicking Pay Now</h1>
+                    <h4>Click and wait util creating order</h4>
                     <div>
                         <Button variant="primary" onClick={this.onPayClick}>Pay Now</Button>
                     </div>
